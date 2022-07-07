@@ -17,13 +17,14 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void AddToScore(int addAmount)
     {
         currentScore += addAmount;
         Debug.Log(currentScore);
+        SetCountText();
     }
 
     void SetCountText()
